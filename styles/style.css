@@ -1,0 +1,89 @@
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+.title {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  color: white;
+  margin-top: 150px;
+  font-size: 35px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: black;
+  text-align: center;
+}
+
+.main-content {
+  padding: 1.5rem;
+}
+
+.reset-button {
+  width: 180px;
+  padding: 0.5rem;
+  outline: none;
+  color: black;
+  background-color: chartreuse;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.reset-button:hover {
+  box-shadow: 10px 10px 10px 5px deeppink;
+  transform: scale(1.1);
+}
+
+.grid-container {
+  display: grid;
+  max-width: 700px;
+  min-height: 700px;
+  border: 2px solid white;
+  margin: 3rem auto;
+}
+
+.grid-pixel {
+  border: 2px solid white;
+  background-color: darkslateblue;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    max-width: 500px;
+    min-height: 500px;
+    border: 1px solid white;
+  }
+  .grid-pixel {
+    border: 1px solid white;
+  }
+  .title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 750px) {
+  .grid-container {
+    max-width: 650px;
+    min-height: 650px;
+    border: 1.5px solid white;
+  }
+  .grid-pixel {
+    border: 1.5px solid white;
+  }
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .grid-container {
+    max-width: 300px;
+    min-height: 300px;
+    border: 1px solid white;
+  }
+  .grid-pixel {
+    border: 1px solid white;
+  }
+  .title {
+    font-size: 20px;
+  }
+}
